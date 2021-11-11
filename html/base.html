@@ -9,6 +9,14 @@
     <title>{% block tab %}{% endblock %}</title>
   </head>
   <body class="bg-warning p-3">
+    <form action="#" method="post" class="row d-flex justify-content-center ">
+      <div class="col-auto">
+        <input type="text" name="coin" class="form-control" placeholder="Enter your Coin name">
+      </div>
+      <div class="col-auto">
+        <button type="submit" class="btn btn-dark mb-3">Check</button>
+      </div>
+  </form>
     {% block title %}{% endblock %}
     {% block content %}{% endblock %}
   </body>
