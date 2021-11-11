@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block tab %}Assignment 4{% endblock %}
+{% block title %}<h1 class='text-center'>Web Scraping and Entry to Database</h1>{% endblock %}
+{% block content %}
+
+<!-- {{values}} -->
+<!-- {{values.coin}}
+    {{values.news}} -->
+<h1>{{title.upper()}} NEWS</h1>
+{% for item in values %}
+    
+    <h1>{{item}}</h1><br>
+    
+{% endfor %}
+
+{% endblock %}
